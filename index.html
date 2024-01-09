@@ -27,6 +27,7 @@
         border-radius: 10px;
         transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
         position: relative;
+        animation: shadows 2s infinite;
       }
 
       .profile-img {
@@ -109,6 +110,21 @@
 
       .business-card:hover .skill-card {
         height: 92%;
+      }
+
+      @keyframes shadows {
+        0% {
+          box-shadow: #48abe0 0 0 20px;
+        }
+        50% {
+          box-shadow: blueviolet 0 0 20px;
+        }
+        75% {
+          box-shadow: rebeccapurple 0 0 20px;
+        }
+        100% {
+          box-shadow: #48abe0 0 0 20px;
+        }
       }
     </style>
   </head>
